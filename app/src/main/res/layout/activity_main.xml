@@ -1,0 +1,204 @@
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/football">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="@dimen/team1"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop"
+                    android:fontFamily="@string/fontFamilyTeam1"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingTeam1"
+                    android:text="@string/team_1"
+                    android:textColor="@color/team1"
+                    android:textSize="@dimen/textSizeTeam1" />
+
+                <TextView
+                    android:id="@+id/team_1_scoreGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopZero1"
+                    android:fontFamily="@string/font"
+                    android:gravity="center"
+                    android:text="@string/score1"
+                    android:textColor="@color/zero1"
+                    android:textSize="@dimen/textSizeZero1" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottomGoal1"
+                    android:layout_marginLeft="@dimen/marginLeftGoal1"
+                    android:layout_marginRight="@dimen/marginRightGoal1"
+                    android:layout_marginTop="@dimen/marginTopGoal1"
+                    android:onClick="addGoalForTeam1"
+                    android:text="@string/Goal" />
+
+                <TextView
+                    android:id="@+id/team_1_scoreFouls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/text"
+                    android:gravity="center"
+                    android:text="@string/score2"
+                    android:textColor="@color/zero2"
+                    android:textSize="@dimen/textSizeZero2" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottomFouls"
+                    android:layout_marginLeft="@dimen/marginLeftFouls"
+                    android:layout_marginRight="@dimen/marginRightFouls"
+                    android:onClick="addFoulForTeam1"
+                    android:text="@string/Fouls" />
+
+                <TextView
+                    android:id="@+id/team_1_scorePenalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamilyZero3"
+                    android:gravity="center"
+                    android:text="@string/score3"
+                    android:textColor="@color/zero3"
+                    android:textSize="@dimen/textSizeZero3" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/marginLeftPenalty"
+                    android:layout_marginRight="@dimen/marginRightPenalty"
+                    android:onClick="addPenaltyForTeam1"
+                    android:text="@string/Penalty" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="@dimen/widthLine"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/marginTopLine"
+                android:background="@color/lineColor">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="@dimen/widthTeam2"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopTeam2"
+                    android:fontFamily="@string/fontFamilyTeam2"
+                    android:gravity="center"
+                    android:padding="@dimen/paddingTeam2"
+                    android:text="@string/team_2"
+                    android:textColor="@color/team2"
+                    android:textSize="@dimen/textSizeTeam2" />
+
+                <TextView
+                    android:id="@+id/team_2_scoreGoal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTopZero4"
+                    android:fontFamily="@string/fontFamilyZero4"
+                    android:gravity="center"
+                    android:text="@string/score4"
+                    android:textColor="@color/zero4"
+                    android:textSize="@dimen/textSizeZero4" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottomGoal2"
+                    android:layout_marginLeft="@dimen/marginLeftGoal2"
+                    android:layout_marginRight="@dimen/marginRightGoal2"
+                    android:layout_marginTop="@dimen/marginTopGoal2"
+                    android:onClick="addGoalForTeam2"
+                    android:text="@string/goal" />
+
+                <TextView
+                    android:id="@+id/team_2_scoreFouls"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamilyZero5"
+                    android:gravity="center"
+                    android:text="@string/score5"
+                    android:textColor="@color/zero5"
+                    android:textSize="50sp" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottomFouls2"
+                    android:layout_marginLeft="@dimen/marginLeftFouls2"
+                    android:layout_marginRight="@dimen/marginRightFouls2"
+                    android:onClick="addFoulForTeam2"
+                    android:text="@string/fouls" />
+
+                <TextView
+                    android:id="@+id/team_2_scorePenalty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@string/fontFamilyZero6"
+                    android:gravity="center"
+                    android:text="@string/score6"
+                    android:textColor="@color/zero6"
+                    android:textSize="@dimen/textSizeZero6" />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/marginBottomPenalty"
+                    android:layout_marginLeft="@dimen/marginLeftPenalty"
+                    android:layout_marginRight="@dimen/marginRightPenalty"
+                    android:onClick="addPenaltyForTeam2"
+                    android:text="@string/penalty" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/marginTopReset"
+            android:onClick="ResetScore"
+            android:text="@string/reset" />
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

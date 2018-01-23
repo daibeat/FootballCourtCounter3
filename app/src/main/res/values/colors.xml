@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="zero6">#ffeb3b</color>
+    <color name="zero5">#ffeb3b</color>
+    <color name="zero4">#ffeb3b</color>
+    <color name="team2">#000000</color>
+    <color name="lineColor">#009624</color>
+    <color name="zero3">#ffeb3b</color>
+    <color name="zero2">#ffeb3b</color>
+    <color name="zero1">#ffeb3b</color>
+    <color name="team1">#000000</color>
+</resources>
