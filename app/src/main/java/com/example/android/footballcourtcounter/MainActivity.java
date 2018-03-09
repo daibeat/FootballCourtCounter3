@@ -153,18 +153,13 @@ public class MainActivity extends AppCompatActivity {
      * Reset the score for Team A and B to 0 points.
      */
     public void ResetScore(View v) {
-        scoreGoalsTeam1 = 0;
-        scoreFoulsTeam1 = 0;
-        scorePenaltyTeam1 = 0;
-        displayGoalsTeam1(scoreGoalsTeam1);
-        displayFoulsTeam1(scoreGoalsTeam1);
-        displayPenaltyTeam1(scorePenaltyTeam1);
-        scoreGoalsTeam2 = 0;
-        scoreFoulsTeam2 = 0;
-        scorePenaltyTeam2 = 0;
-        displayGoalsTeam2(scoreGoalsTeam2);
-        displayFoulsTeam2(scoreGoalsTeam2);
-        displayPenaltyTeam2(scorePenaltyTeam2);
+
+        displayGoalsTeam1(scoreGoalsTeam1 = 0);
+        displayFoulsTeam1(scoreFoulsTeam1 = 0);
+        displayPenaltyTeam1(scorePenaltyTeam1 = 0);
+        displayGoalsTeam2(scoreGoalsTeam2 = 0);
+        displayFoulsTeam2(scoreFoulsTeam2 = 0);
+        displayPenaltyTeam2(scorePenaltyTeam2 = 0);
 
     }
 

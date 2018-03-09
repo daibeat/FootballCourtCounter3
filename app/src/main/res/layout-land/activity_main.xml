@@ -2,7 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/football">
+    android:fillViewport="true"
+    android:background="@drawable/football_land2">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -10,32 +11,34 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="3dp"
                     android:text="@string/team_1"
-                    android:textColor="#000000"
+                    android:textColor="#ffff"
                     android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/team_1_scoreGoal"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score1"
@@ -43,7 +46,7 @@
                     android:textSize="70sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="30dp"
@@ -54,8 +57,9 @@
 
                 <TextView
                     android:id="@+id/team_1_scoreFouls"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score2"
@@ -63,7 +67,7 @@
                     android:textSize="50sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="30dp"
@@ -73,8 +77,9 @@
 
                 <TextView
                     android:id="@+id/team_1_scorePenalty"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score3"
@@ -82,7 +87,7 @@
                     android:textSize="50sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="30dp"
                     android:layout_marginRight="30dp"
@@ -90,38 +95,40 @@
                     android:text="@string/penalty" />
             </LinearLayout>
 
-
             <View
-                android:layout_width="3dp"
-                android:layout_height="match_parent"
-                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="180dp"
                 android:background="#009624">
 
             </View>
 
-
             <LinearLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="22dp"
                 android:layout_weight="1"
-                android:orientation="vertical">
+                android:orientation="horizontal">
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="10dp"
                     android:fontFamily="sans-serif-medium"
                     android:gravity="center"
                     android:padding="3dp"
                     android:text="@string/team_2"
-                    android:textColor="#000000"
+                    android:textColor="#ffff"
                     android:textSize="25sp" />
 
                 <TextView
                     android:id="@+id/team_2_scoreGoal"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
+                    android:layout_marginLeft="16dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score4"
@@ -129,7 +136,7 @@
                     android:textSize="70sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="30dp"
@@ -140,8 +147,9 @@
 
                 <TextView
                     android:id="@+id/team_2_scoreFouls"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score5"
@@ -149,7 +157,7 @@
                     android:textSize="50sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="20dp"
                     android:layout_marginLeft="30dp"
@@ -159,8 +167,9 @@
 
                 <TextView
                     android:id="@+id/team_2_scorePenalty"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
                     android:fontFamily="sans-serif-light"
                     android:gravity="center"
                     android:text="@string/score6"
@@ -168,7 +177,7 @@
                     android:textSize="50sp" />
 
                 <Button
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="30dp"
@@ -178,16 +187,16 @@
 
             </LinearLayout>
 
+
         </LinearLayout>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="163dp"
-            android:layout_marginTop="520dp"
+            android:layout_marginLeft="660dp"
+            android:layout_marginTop="150dp"
             android:onClick="ResetScore"
             android:text="@string/reset" />
-
     </RelativeLayout>
 
 </ScrollView>

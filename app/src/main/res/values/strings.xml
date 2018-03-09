@@ -7,8 +7,6 @@
     <string name="Fouls">Fouls</string>
     <string name="Penalty">Penalty</string>
     <string name="team_2">Team 2</string>
-    <string name="goal">Goal</string>
-    <string name="fouls">Fouls</string>
     <string name="penalty">Penalty</string>
     <string name="reset">RESET</string>
     <string name="score2">0</string>
@@ -23,4 +21,6 @@
     <string name="fontFamilyZero4">sans-serif-light</string>
     <string name="fontFamilyZero5">sans-serif-light</string>
     <string name="fontFamilyZero6">sans-serif-light</string>
+    <string name="goal">Goal</string>
+    <string name="fouls">Fouls</string>
 </resources>
